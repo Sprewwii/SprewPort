@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  height: 100%;
+  /* overflow: hidden; */
+  background-color: rgb(254, 249, 247);
+}
+
+nav {
+  /* background-color: rgb(254, 249, 247); */
+
+}
+
+#surname {
+  /* text-shadow: 2px 0 rgb(62, 62, 62), 
+              -2px 0 rgb(62, 62, 62), 
+              0 2px rgb(62, 62, 62), 
+              0 -2px rgb(62, 62, 62),
+               1px 1px rgb(62, 62, 62), 
+               -1px -1px rgb(62, 62, 62), 
+               1px -1px rgb(62, 62, 62), 
+               -1px 1px rgb(62, 62, 62); */
+color: transparent;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: rgb(62, 62, 62);
+}
