@@ -1,6 +1,11 @@
 import React from 'react';
 import ProjectList from './projectList.jsx';
-import Navbar from "./Navbar.jsx"
+import SpringBoot from "../logo/SimpleIconsSpring"
+import NodeJs from "../logo/MdiNodejs"
+import MySQL from "../logo/CibMysql"
+import Firebase from "../logo/MdiFirebase"
+import Tailwind from "../logo/MdiTailwind"
+import VueJs from "../logo/RiVuejsFill"
 
 export default function ProjectPage() {
 
@@ -9,8 +14,8 @@ export default function ProjectPage() {
         nameProject: "Meow Run Season 2", 
         img: "./MeowRun.png",
         descrption: "Meow Run Season 2 is a game web application. This gameplay is similar to Cookie Run and Dino TRex",
-        interestingFunction: ["Sending Mail Verification", "RESTful API", "Sign Up and Sign In system", "Cors"],
-        language: "Vue.js, Express.js and NoSQL(Firebase)",
+        interestingFunction: ["Sending Mail Verification", "RESTful API", "Cors", "Firebse", "250 players++", "Authentication System"],
+        language: "Vue.js, Express.js, and NoSQL",
         link: "https://meowrun.site/",
         linkGit: "https://github.com/mosqto2001/MeowRun-2-Backend/tree/main/functions"
         },
@@ -18,8 +23,8 @@ export default function ProjectPage() {
         nameProject: "Mana Clinic", 
         img: "./ManaClinic.png",
         descrption: "Mana Clinic is a web application that helps to create, edit, delete, and manage scheduled events.",
-        interestingFunction: ["Custom throw Exception", "RESTful API", "Authentication System (Token)", "Integrate with Front-end and Database"],
-        language: "Vue.js, SpringBoot and MySQL",
+        interestingFunction: ["Custom Exception Handling and Validator", "RESTful API", "Agile Development", "Authentication System (Token)", "Integrate with Front-end and Database"],
+        language: "Vue.js, Spring Boot, and MySQL",
         link: "https://intproj21.sit.kmutt.ac.th/or1/",
         linkGit: "https://github.com/Sprewwii/INT221-Backend"
         },
@@ -36,10 +41,10 @@ export default function ProjectPage() {
         nameProject: "SIT Volunteer 2021", 
         img: "./Volunteer.png",
         descrption: "This camp was to create learning materials. These materials can help blind students to enhance creativity.",
-        interestingFunction: ["Storytelling Clips", "Donations", "Braille Vocabulary Flashcards", "Braille Books" ],
+        interestingFunction: ["Storytelling Clips", "Donations", "Braille Vocabulary Flashcards", "Braille Books"],
         link: "https://www.sit.kmutt.ac.th/blog/info_announcement/sit-volunteer-2021-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B2%E0%B8%87/",
         },
-        {position: "President of Web Design Team", 
+        {position: "President of Web Design", 
         nameProject: "SIT Hello World 2021", 
         img: "./HelloWorld.png", 
         descrption: "This camp was sharing knowledge activity for 1st year in SIT. I taught about essential user interface, user experience, Adobe Illustrator, etc.",

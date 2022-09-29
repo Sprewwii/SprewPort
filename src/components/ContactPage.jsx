@@ -55,18 +55,18 @@ export default function ContactPage() {
         {logo: Home, detail:"29/89 Chomthong Rd., Bang Kho, Chom Thong, Bangkok 10150"}
     ]
     return (
-        <div className="mt-28">
+        <div className="mt-28 mb-10">
             <h1 className="text-center text-5xl font-black text-gray-700 z-50">SKILLS</h1>
-            <div className="flex gap-10 pb-12 mx-16 mt-10">
+            <div className="flex gap-2 sm:gap-10 md:gap-10 xl:gap-10 pb-12 mx-4 sm:mx-16 md:mx-16 xl:mx-16 mt-10">
             
             <div className=""><Skills type="coding" skills={skills}/></div>
             <div className=""><Skills type="Another Skill" skills={anotherSkill} className=""/></div>
 
         </div>
 
-        <h1 className="text-center text-5xl font-black text-gray-700 z-50 mt-12">CONTACT</h1>
-        <div className="flex flex-row gap-x-24 justify-center items-center mt-16">
-        {contacts.map((contact, i) => <ContactMe contact={contact} key={i} />)}
+        <h1 className="text-center text-5xl font-black text-gray-700 z-50">CONTACT</h1>
+        <div className="flex flex-col xl:flex-row gap-y-5 xl:gap-x-10 justify-center items-center mt-16">
+        {contacts.map((contact, i) => <ContactMe className="" contact={contact} key={i} />)}
         </div>
         </div>
     )

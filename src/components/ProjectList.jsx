@@ -3,11 +3,12 @@ import { Link, useLocation } from "react-router-dom"
 import GitHub from "../logo/MdiGithub"
 import TablerLink from "../logo/TablerLink"
 import Figma from "../logo/PhFigmaLogoBold"
+import Build from "../logo/MaterialSymbolsBuildCircleOutlineRounded"
 
 export default function ProjectList(props) {
   return (
     <div>
-      <a className="relative block group sm:h-[550px] md:h-[500px] xl:h-[450px]">
+      <a className="relative block group sm:h-[550px] md:h-full xl:h-[450px]">
         <span className="absolute inset-0 border-2 border-black border-dashed"></span>
 
         <div className="p-8 relative flex flex-col items-start h-full transition-transform transform bg-white border-2 border-black -translate-x-2 -translate-y-2">
@@ -24,14 +25,21 @@ export default function ProjectList(props) {
             <h2 className="mt-5 text-xl sm:text-2xl md:text-2xl xl:text-2xl font-black">
               {props.project.nameProject}
             </h2>
-
-            <p className="my-2 text-gray-600">{props.project.descrption}</p>
+            {props.project.language && (
+            <div className="flex flex-row text-pink-700 gap-1 my-2 text-sm sm:text-sm md:text-sm xl:text-base">
+            <Build height="1.5em" width="1.5em"/>
+            <p className=""> {props.project.language}</p>
+            </div>)}
+            {/* {props.project.language.map((lan,index) =>
+                  <lan key={index} height="2em" width="2em"/>
+            )} */}
+            <p className="mb-2 text-gray-600 text-sm sm:text-sm md:text-sm xl:text-base">{props.project.descrption}</p>
             {/* <strong class="flex relative h-6 p-3 text-sm leading-6 bg-gray-200">
               <p className="-mt-3">{props.project.interestingFunction}</p>
             </strong> */}
-            <div className="flex flex-row flex-wrap gap-2">
+            <div className="flex flex-row flex-wrap gap-1 my-1">
               {props.project.interestingFunction.map((project, i) => (
-                <strong class=" border text-pink-700 text-sm border-current px-5 py-1.5 rounded-full tracking-wide">
+                <strong class=" border-2 border-pink-700 text-pink-700 text-xs sm:text-xs md:text-xs xl:text-sm  px-5 py-1.5 rounded-full tracking-wide">
                   {project}
                 </strong>
               ))}

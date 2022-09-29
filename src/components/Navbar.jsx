@@ -6,7 +6,7 @@ export default function Navbar() {
   const [show, setShow] = useState("false")
   return (
     <div>
-      <nav className="px-2 sm:px-4 py-8 fixed w-full z-50 top-0 left-0 font-extrabold">
+      <nav className="px-2 sm:px-4 py-4 fixed w-full z-50 top-0 left-0 font-extrabold sm:bg-pink-100 md:bg-pink-100 xl:bg-pink-100">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <span className="self-center text-xl font-semibold whitespace-nowrap"></span>
 
