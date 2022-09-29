@@ -4,14 +4,13 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   height: 100%;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+  background-color: #fffaf7;
+}
+
+/* nav {
   background-color: rgb(254, 249, 247);
-}
-
-nav {
-  /* background-color: rgb(254, 249, 247); */
-
-}
+} */
 
 #surname {
   /* text-shadow: 2px 0 rgb(62, 62, 62), 

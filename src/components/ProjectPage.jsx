@@ -34,32 +34,29 @@ export default function ProjectPage() {
         },
         {position: "President", 
         nameProject: "SIT Volunteer 2021", 
-        img: "./Volunteer.jpg",
+        img: "./Volunteer.png",
         descrption: "This camp was to create learning materials. These materials can help blind students to enhance creativity.",
-        interestingFunction: ["Storytelling Clips", "Braille Vocabulary Flashcards", "Braille Books", "Donations" ],
-        language: "",
+        interestingFunction: ["Storytelling Clips", "Donations", "Braille Vocabulary Flashcards", "Braille Books" ],
         link: "https://www.sit.kmutt.ac.th/blog/info_announcement/sit-volunteer-2021-%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B2%E0%B8%87/",
-        linkGit: ""
         },
         {position: "President of Web Design Team", 
         nameProject: "SIT Hello World 2021", 
-        img: "./HelloWorld.png",
-        descrption: "This camp was to create learning materials. These materials can help blind students to enhance creativity.",
-        interestingFunction: ["Storytelling Clips", "Braille Vocabulary Flashcards", "Braille Books", "Donations" ],
-        language: "",
+        img: "./HelloWorld.png", 
+        descrption: "This camp was sharing knowledge activity for 1st year in SIT. I taught about essential user interface, user experience, Adobe Illustrator, etc.",
+        interestingFunction: ["User Interface", "User Experience", "Website Element", "Abode Illustrator" ],
         link: "https://helloworld-ermine.web.app/",
-        linkGit: "https://www.figma.com/file/tcKAg2rgZlk3kcRpo6UOcA/Hello-Ermine?node-id=0%3A1"
+        linkFigma: "https://www.figma.com/file/tcKAg2rgZlk3kcRpo6UOcA/Hello-Ermine?node-id=0%3A1"
         }
 
     ]
     return (
         <div className="mt-28 overflow-y-auto">
-        <h1 className="text-center text-5xl font-black text-gray-700 mt-5 z-50 ">WORK EXPERIENCE</h1>
+        <h1 className="text-center text-5xl font-black text-gray-700 z-50 ">WORK EXPERIENCE</h1>
 
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 py-12 mx-24">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 py-12 mx-16">
             {projects.slice(0,2).map((project, i) => <ProjectList project={project} key={i} />)}
         </div>
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-3 pb-12 mx-24">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 pb-12 mx-16">
             {projects.slice(2).map((project, i) => <ProjectList project={project} key={i} />)}
         </div>
         </div>
