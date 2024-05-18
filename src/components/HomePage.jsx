@@ -5,9 +5,11 @@ import ButtonResume from "./ButtonResume.jsx"
 
 export default function HomePage() {
     return (
-        <div>
-          <ButtonResume />
+        <div className="w-full">
           <Home />
+          {/* <div className="w-full bg-red-500"> */}
+          <ButtonResume />
+          {/* </div> */}
         </div>
     )
 }

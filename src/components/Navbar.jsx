@@ -18,7 +18,6 @@ export default function Navbar() {
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
-              <span className="sr-only">Open main menu</span>
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"
@@ -27,27 +26,27 @@ export default function Navbar() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </button>
           </div>
           <div
-            className={`${show == true ? 'bg-pink-300 right-5 top-16 fixed text-right justify-between w-1/3 items-center z-50' : 'hidden'} xl:text-center lg:bg-transparent xl:w-full md:flex md:w-auto md:order-1`}
+            className={`${show == true ? 'bg-pink-300 right-5 top-16 absolute text-right justify-between w-1/3 items-center z-50' : 'hidden'} xl:text-center lg:bg-transparent xl:w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 mt-4 rounded-lg sm:mx-auto md:flex-row md:space-x-24 md:mt-0 md:text-sm md:font-bold md:border-0">
               <Link to="/">
                 <li>
-                  <a href="#" className={`${location.pathname == "/" ? "text-pink-700" : "text-gray-700 xl:hover:text-pink-300"} block py-2 pr-4 pl-3 rounded md:p-0`}
-                    aria-current="page"> HOME </a>
+                  <div href="#" className={`${location.pathname == "/" ? "text-pink-700" : "text-gray-700 xl:hover:text-pink-300"} block py-2 pr-4 pl-3 rounded md:p-0`}
+                    aria-current="page"> HOME </div>
                 </li>
               </Link>
               <Link to="/projects">
                 <li>
-                  <a
+                  <div
                     href="#"
                     className={`${
                       location.pathname == "/projects"
@@ -56,12 +55,26 @@ export default function Navbar() {
                     } block py-2 pr-4 pl-3 rounded md:p-0 xl:hover:text-pink-300`}
                   >
                     PROJECTS
-                  </a>
+                  </div>
                 </li>
               </Link>
+              {/* <Link to="/activities">
+                <li>
+                  <div
+                    href="#"
+                    className={`${
+                      location.pathname == "/activities"
+                        ? "text-pink-700"
+                        : "text-gray-700"
+                    } block py-2 pr-4 pl-3 rounded md:p-0 xl:hover:text-pink-300`}
+                  >
+                    ACTIVITIES
+                  </div>
+                </li>
+              </Link> */}
               <Link to="/contact">
                 <li>
-                  <a
+                  <div
                     href="#"
                     className={`${
                       location.pathname == "/contact"
@@ -69,8 +82,8 @@ export default function Navbar() {
                         : "text-gray-700"
                     } block py-2 pr-4 pl-3 rounded md:p-0 xl:hover:text-pink-300`}
                   >
-                    ABOUT ME
-                  </a>
+                    SKILLS
+                  </div>
                 </li>
               </Link>
             </ul>
